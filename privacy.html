@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>tripd privacy policy</title>
+<style>body{font:16px/1.55 system-ui,sans-serif;max-width:42rem;margin:0 auto;padding:1rem;color:#1a1a1a;background:#fff}h1{font-size:1.6rem}h2{font-size:1.2rem;margin-top:2rem}a{color:#0b57d0}table{border-collapse:collapse;width:100%;font-size:.92rem}th,td{border:1px solid #ccc;padding:.4rem;text-align:left;vertical-align:top}.wrap{overflow-x:auto}@media(prefers-color-scheme:dark){body{background:#111;color:#eee}a{color:#8ab4f8}th,td{border-color:#444}}</style></head><body>
+<h1>tripd privacy policy</h1>
+<p>Last updated: 2026-10-22</p>
+
+<h2>Who we are</h2>
+<p>tripd is an Android trip planner for groups, developed by an independent developer (Shareed2k). Contact: <a href="mailto:CONTACT_EMAIL">CONTACT_EMAIL</a>.</p>
+
+<h2>Short version</h2>
+<ul>
+<li>There is no developer server and no account with the developer. The developer does not receive your trips, your name or your keys.</li>
+<li>Your trip data lives on a tripd host: a phone of yours or of a trip member. You delete it there.</li>
+<li>The app contains no analytics, no ads and no crash-reporting SDK.</li>
+<li>Some features send data to third-party services. Each one is listed below, with what it receives and when.</li>
+</ul>
+
+<h2>Your trip data</h2>
+<p>Trips, stops, items, bookings, checklists, expenses, people and guides are stored on a tripd host running on your phone or on a trip member's phone. Phones of members sync with that host. The data never goes to the developer. A tripd identity lives in a host on your own phone or a friend's phone, together with its recovery key; the developer has no account for you and cannot see, recover or delete one.</p>
+
+<h2>Third parties and what they receive</h2>
+<div class="wrap"><table>
+<tr><th>Service</th><th>What it receives</th><th>When</th></tr>
+<tr><td>Your chosen AI provider: Anthropic (Claude), Google (Gemini), OpenAI, or your own Ollama server</td><td>Chat messages, trip context, imported documents, guide page text, and your position when you turn on "Show where I am". You use your own key; the developer never sees it.</td><td>When you ask in chat, import a document, or a guide is read</td></tr>
+<tr><td>On-phone model</td><td>Nothing leaves the phone: the same data stays on the device.</td><td>When you pick the on-phone model</td></tr>
+<tr><td>Tavily</td><td>Search queries, using your own Tavily key</td><td>Chat web search and blog search; off without a key</td></tr>
+<tr><td>Open-Meteo</td><td>Trip locations and dates, and places you ask about</td><td>Weather (Settings, Weather)</td></tr>
+<tr><td>Wikivoyage</td><td>City names, fetched by the host</td><td>Guides (Settings, Guides)</td></tr>
+<tr><td>The site of a page</td><td>A request for the found or pasted page URL, made by the host</td><td>Guides</td></tr>
+<tr><td>Photon (photon.komoot.io)</td><td>Place names and points</td><td>Places and guides</td></tr>
+<tr><td>Overpass, OpenStreetMap data: first overpass.private.coffee, then overpass-api.de</td><td>Place names and points</td><td>Places and guides</td></tr>
+<tr><td>OSRM (FOSSGIS, routing.openstreetmap.de)</td><td>Stop points</td><td>Routes (Settings, Routes)</td></tr>
+<tr><td>Google Calendar public holiday calendars, and Nager.Date</td><td>Countries</td><td>Holidays (Settings, Holidays)</td></tr>
+<tr><td>OpenFreeMap</td><td>Map view (the tiles you look at)</td><td>Maps</td></tr>
+<tr><td>Hugging Face</td><td>A download request for the on-phone model file; no trip data</td><td>Only when you enable the on-phone model</td></tr>
+<tr><td>An S3 address you set</td><td>The whole host backup: trips, photos, accounts and the host's TLS key</td><td>Only when you choose S3 for backups (Settings, Backups)</td></tr>
+<tr><td>Your local Wi-Fi network (NSD)</td><td>Your name and the host's server ID, announced so members' phones find the host</td><td>While the host runs</td></tr>
+<tr><td>Google Forms (the developer's form)</td><td>An AI answer report you send, see below</td><td>Only when you send a report</td></tr>
+</table></div>
+<p>Each of these services has its own privacy policy and sees your IP address like any web server. A link such as "Open in Google" in chat opens your browser at your request.</p>
+<p>City suggestions use an offline GeoNames database bundled in the app and send nothing.</p>
+
+<h2>Your control</h2>
+<p>In Settings, Weather, Guides (including "Update guides automatically"), Holidays and Routes each have a switch and a note saying what is sent. Turn a switch off and that service is not contacted. AI, search and S3 work only when you enter your own provider, key or address. The map uses OpenFreeMap whenever you view it. You can also choose the on-phone model so AI data stays on the phone.</p>
+
+<h2>Reporting an AI answer</h2>
+<p>Every AI answer in Ask has a "Report" action. A report you send goes to the developer's Google Form over HTTPS. It contains the reason, your optional note, the AI provider and model name, the app version, and the reported answer's text (up to 2,000 characters) when "Include the answer" is ticked, which is the default. <strong>A report you send may include the reported answer, which can contain details of your trip</strong>, such as names, bookings, money or places. The sheet shows exactly what will be sent and you can untick the box. No other trip data, keys, user name, position or chat history is sent.</p>
+
+<h2>Retention and deletion</h2>
+<p>The developer keeps no trip data. Your data stays on the hosts of you and your trip members; delete a trip, or clear the app, on those phones to remove it. Backups you make (to Downloads/tripd on the phone, or to your own S3) are yours to delete. Reports received through the form are kept only as long as needed to review the content and may be deleted at any time; write to the contact address to ask for a report to be deleted.</p>
+
+<h2>Children</h2>
+<p>tripd is not directed at children and is meant for people 18 and over.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the date at the top changes too.</p>
+</body></html>
