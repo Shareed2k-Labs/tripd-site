@@ -2,7 +2,7 @@
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>tripd privacy policy</title>
 <style>body{font:16px/1.55 system-ui,sans-serif;max-width:42rem;margin:0 auto;padding:1rem;color:#1a1a1a;background:#fff}h1{font-size:1.6rem}h2{font-size:1.2rem;margin-top:2rem}a{color:#0b57d0}table{border-collapse:collapse;width:100%;font-size:.92rem}th,td{border:1px solid #ccc;padding:.4rem;text-align:left;vertical-align:top}.wrap{overflow-x:auto}@media(prefers-color-scheme:dark){body{background:#111;color:#eee}a{color:#8ab4f8}th,td{border-color:#444}}</style></head><body>
 <h1>tripd privacy policy</h1>
-<p>Last updated: 2026-10-22</p>
+<p>Last updated: 2026-10-23</p>
 
 <h2>Who we are</h2>
 <p>tripd is an Android trip planner for groups, developed by Roman Kredentser. Contact: <a href="mailto:shareed2k@gmail.com">shareed2k@gmail.com</a>.</p>
@@ -46,8 +46,15 @@
 <h2>Reporting an AI answer</h2>
 <p>Every AI answer in Ask has a "Report" action. A report you send goes to the developer's Google Form over HTTPS. It contains the reason, your optional note, the AI provider and model name, the app version, and the reported answer's text (up to 2,000 characters) when "Include the answer" is ticked, which is the default. <strong>A report you send may include the reported answer, which can contain details of your trip</strong>, such as names, bookings, money or places. The sheet shows exactly what will be sent and you can untick the box. No other trip data, keys, user name, position or chat history is sent.</p>
 
-<h2>Retention and deletion</h2>
-<p>The developer keeps no trip data. Your data stays on the hosts of you and your trip members; delete a trip, or clear the app, on those phones to remove it. Backups you make (to Downloads/tripd on the phone, or to your own S3) are yours to delete. Reports received through the form are kept only as long as needed to review the content and may be deleted at any time; write to the contact address to ask for a report to be deleted.</p>
+<h2 id="delete">Delete your data</h2>
+<p>tripd (by Roman Kredentser) keeps your data on phones, not on the developer's servers. The only data the developer receives is an AI answer report you choose to send. Here is how to delete each kind of data.</p>
+<ol>
+<li><strong>A trip you own.</strong> In tripd, open the trip, tap the three-dot menu at the top right, tap "Delete trip" and confirm. Its stops, plans, checklist, bookings, expenses, people and photos are deleted from your host for everyone in the trip, at once.</li>
+<li><strong>Everything tripd stores on your phone.</strong> Android Settings &gt; Apps &gt; tripd &gt; Storage &gt; Clear storage (or uninstall tripd). This deletes your identity, the trips your phone hosts, your settings and keys, and the chat history, at once. Trips hosted on a friend's phone stay there: ask the trip's owner to delete them.</li>
+<li><strong>Backups.</strong> Delete the zip files in Downloads/tripd on your phone, and in your own S3 bucket if you set one up. The developer has no copy.</li>
+<li><strong>An AI answer report you sent.</strong> Email <a href="mailto:shareed2k@gmail.com">shareed2k@gmail.com</a> with the subject "Delete my tripd report" and the date you sent it (and your note, if you wrote one). The developer deletes the matching report within 30 days and replies when done.</li>
+</ol>
+<p>What is kept: nothing. Reports are kept only as long as needed to review the reported content, and are deleted on request as above. The developer keeps no trip data, names, positions or keys.</p>
 
 <h2>Children</h2>
 <p>tripd is not directed at children and is meant for people 18 and over.</p>
